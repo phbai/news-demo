@@ -1,0 +1,98 @@
+{% extends 'template.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 menu">
+				<ul class="list-group">
+				
+					<li class="list-group-item"><a data-index="0" href="javascript:;">关于</a></li>
+					<li class="list-group-item"><a data-index="1" href="javascript:;">免责声明</a></li>
+					
+				</ul>
+			</div>
+			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+				<ul id="content">
+					<li class="content-box">
+						<h3>关于本网站</h3>
+
+						<p></br>本网站是安徽理工大学软件工程课程设计--新闻发布系统</p>
+
+						<p>主要用到了：</p>
+						<ul>
+						<li><p>jQuery</p></li>
+
+						<li><p>bootstrap</p></li>
+
+						<li><p>django</p></li>
+
+						<li><p>django-admin-bootstrapped</p></li>
+
+						<li><p>django-ckeditor</p></li>
+						</ul>
+
+					</li>
+					<li class="content-box">
+						<h3>所有资源来自网友分享,本站只提供用户交互平台。</h3></br>
+
+						<ul>
+						    <li><p>本站收录的各类视频与资料，大部分是网友从网上搜集分享而来，其版权均归原作者及其网站所有，本站虽力求保存原有的版权信息，但因很多视频资料经过多次转摘，已无法确定其真实来源，或者已将原有信息丢失，所以敬请原作者原谅。如果您对本站所载视频作品版权的归属存有异议，请立即通知我，我将在第一时间予以删除，同时向你表示歉意！</p><br /></li>
+						<li>
+						<p>本站仅转载网上现成的视频资料，很难对这些视频的可用性，准确性或可靠性作出任何承诺与保证。不论何种情形，本站都不对任何由于使用或无法使用本站提供的视频资料所造成的直接的和间接的损失负任何责任。</p><br /></li>
+						<li><p>
+						本站提供的所有视频，均为网友私人收藏性质，未经原版权作者许可,任何人不得擅作它用！请在下载24小时内删除！为尊重作者版权，请购买原版作品,支持你喜欢的作者，谢谢！</p></li>
+						</ul>
+
+					</li>
+					
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript">
+	$(function(){
+
+		content_boxes = $("ul#content").find("li.content-box");
+		content_boxes.eq(0).show();
+		content_boxes.eq(0).siblings().hide();
+
+		var item = $(".menu").find("li");
+		item.hover(function(){
+			
+			$(this).addClass("border-active");
+		}, function(){
+			$(this).removeClass("border-active");
+		});
+
+		
+
+
+		item.find("a").click(function(){
+			var index = $(this).attr("data-index");
+			// alert(index);
+			var content = content_boxes.eq(index);
+			content.show();
+			content.siblings().hide();
+		})
+
+		/*li p 增加circle*/
+		var circle = $("<span class='circle'></span>");
+		content_boxes.find("li").find("p").prepend(circle)
+
+	});
+</script>
+<script type="text/javascript">
+	$(function(){
+		var bookmark = $("<span class='title'></span>");
+		$("li.content-box h3").prepend(bookmark);
+		$("img").addClass("img-responsive");
+	});
+</script>
+{% endblock %}

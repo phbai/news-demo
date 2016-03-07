@@ -1,0 +1,331 @@
+/*@media (min-width: 1200px)
+.small-container {
+    width: 1170px;
+}*/
+
+a{
+	color: #4213F5;
+}
+p{
+	font-family: "Microsoft YaHei";
+	font-size: 1.4rem;
+	font-weight: 200;
+	line-height: 2.5rem;
+	margin-bottom: 2.2rem;
+}
+::selection{
+	color: #fff;
+	background: #4213F5;
+}
+@media (min-width: 768px){
+	.small-container {
+	    width: 750px;
+	}
+}
+@media (min-width: 992px){
+	.small-container {
+	    width: 960px;
+	}
+}
+
+.small-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.right{
+	float: right!important;
+}
+.left{
+	float: left!important;
+}
+
+nav.navbar-news{
+	background: #fff;
+	border-bottom: 1px solid #e2e2e2;
+
+}
+section#news{
+	margin-top: 100px;
+}
+section#news .item{
+	overflow: hidden;
+	margin-bottom: 30px;
+	max-height: 700px;
+}
+section#news .item h3{
+	font-family: "Microsoft YaHei";
+	font-size: 2.1rem;
+	font-weight: 800;
+	line-height: 2.5rem;
+	margin: 0 0 1.5rem 0;
+}
+section#news .item a{
+	color: #4213F5;
+	transition: color ease .6s;
+	-webkit-transition: color ease .6s;
+	-moz-transition: color ease .6s;
+	-o-transition: color ease .6s;
+	text-decoration: none!important;
+}
+section#news .item a:hover{
+	color: #DEE0BC;
+}
+section#news .item a:visited{
+	/*color: #F2F3ED;*/
+}
+section#news .item p{
+	font-family: "Microsoft YaHei";
+	font-size: 1.3rem;
+	font-weight: 200;
+	line-height: 2.5rem;
+	margin-bottom: 2.2rem;
+	margin-top: .5rem;
+	max-height: 120px;
+    overflow: hidden;
+}
+section#news .menu .list-group-item{
+	color: #4213F5;
+	border: none;
+	padding: 0 15px;
+	margin: 15px 0;
+	transition: all linear .4s;
+	-webkit-transition: all ease linear .4s;
+}
+section#news .menu .list-group-item a{
+	color: #4213F5;
+	transition: color ease .6s;
+	-webkit-transition: color ease .6s;
+	-moz-transition: color ease .6s;
+	-o-transition: color ease .6s;
+	text-decoration: none!important;
+}
+section#news .menu .list-group-item a:hover{
+	color: #DEE0BC;
+}
+section#news .menu .list-group-item:first-child{
+	border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+section#news .menu .list-group-item:last-child{
+	margin-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+section#news .menu .list-group-item.border-active{
+	border-right: 2px solid #4213F5;
+}
+section#news #content{
+	list-style-type: none;
+	padding: 0;
+}
+section#news #content ul{
+	padding: 0;
+}
+section#news #content .content-box li{
+	list-style-type: none;
+}
+section#content{
+	margin-top: 100px;
+}
+section#content .article p{
+	font-family: "Microsoft YaHei";
+	font-size: 1.4rem;
+	font-weight: 200;
+	line-height: 2.5rem;
+	margin-bottom: 2.2rem;
+
+}
+section#content .article div{
+	margin-bottom: 2.2rem;
+
+}
+section#content .article h3{
+	margin: 20px 0;
+}
+section#content .article h2{
+	margin: 50px 0;
+}
+
+section#about{
+	margin-top: 100px;
+}
+section#about .menu .list-group-item{
+	color: #4213F5;
+	border: none;
+	padding: 0 15px;
+	margin: 15px 0;
+	transition: all linear .4s;
+	-webkit-transition: all ease linear .4s;
+}
+section#about .menu .list-group-item a{
+	color: #4213F5;
+	transition: color ease .6s;
+	-webkit-transition: color ease .6s;
+	-moz-transition: color ease .6s;
+	-o-transition: color ease .6s;
+	text-decoration: none!important;
+}
+section#about .menu .list-group-item a:hover{
+	color: #DEE0BC;
+}
+section#about .menu .list-group-item:first-child{
+	border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+section#about .menu .list-group-item:last-child{
+	margin-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+section#about .menu .list-group-item.border-active{
+	border-right: 2px solid #4213F5;
+}
+section#about #content{
+	list-style-type: none;
+	padding: 0;
+}
+section#about #content ul{
+	padding: 0;
+}
+section#about #content .content-box li{
+	list-style-type: none;
+}
+
+span.admin{
+	float: left;
+	display: inline-block;
+	margin-right: 8px;
+	width: 20px;
+	height: 20px;
+	background: url('/static/images/admin.svg');
+	background-size: 20px 20px;
+}
+span.about{
+	float: left;
+	display: inline-block;
+	margin-right: 8px;
+	width: 20px;
+	height: 20px;
+	background: url('/static/images/about.svg');
+	background-size: 20px 20px;
+}
+span.scoop{
+	float: left;
+	display: inline-block;
+	margin-right: 8px;
+	width: 20px;
+	height: 20px;
+	background: url('/static/images/scoop.svg');
+	background-size: 20px 20px;
+}
+span.finance{
+	float: left;
+	display: inline-block;
+	margin-right: 8px;
+	width: 20px;
+	height: 20px;
+	background: url('/static/images/finance.svg');
+	background-size: 20px 20px;
+}
+span.society{
+	float: left;
+	display: inline-block;
+	margin-right: 8px;
+	width: 20px;
+	height: 20px;
+	background: url('/static/images/society.svg');
+	background-size: 20px 20px;
+}
+span.military{
+	float: left;
+	display: inline-block;
+	margin-right: 8px;
+	width: 20px;
+	height: 20px;
+	background: url('/static/images/military.svg');
+	background-size: 20px 20px;
+}
+span.sport{
+	float: left;
+	display: inline-block;
+	margin-right: 8px;
+	width: 20px;
+	height: 20px;
+	background: url('/static/images/sport.svg');
+	background-size: 20px 20px;
+}
+span.science{
+	float: left;
+	display: inline-block;
+	margin-right: 8px;
+	width: 20px;
+	height: 20px;
+	background: url('/static/images/science.svg');
+	background-size: 20px 20px;
+}
+span.title{
+	float: left;
+    display: inline-block;
+    margin-right: 8px;
+    margin-top: 2px;
+    width: 24px;
+    height: 24px;
+    background: url('/static/images/title.svg');
+    background-size: 24px 24px;
+}
+span.circle{
+	/*float: left;*/
+    display: inline-block;
+    position: relative;
+	top: 4px;
+    margin-right: 8px;
+    margin-top: 2px;
+    width: 20px;
+    height: 20px;
+    background: url('/static/images/circle.svg');
+    background-size: 20px 20px;
+}
+span.category{
+	display: inline-block;
+	color: #4213F5;
+	padding: 5px 8px;
+	height: 30px;
+	cursor: pointer;
+}
+span.tag{
+	/*display: inline-block;*/
+	max-width: 150px;
+	height: 30px;
+	line-height: 30px;
+	padding: 5px 8px;
+	cursor: pointer;
+	color: #4213F5;
+	border-radius: 6px;
+	border: 1px solid #4213F5;
+	transition: all ease .6s;
+	-webkit-transition: all ease .6s;
+}
+span.tag:hover{
+	background: #4213F5;
+	color: #fff;
+
+}
+span.name{
+	color: #4213F5;
+}
+.navbar-news .navbar-toggle .icon-bar{
+	background-color: #4213F5;
+}
+@media (max-width: 992px){
+	section#news{
+		margin-top: 55px;
+	}
+	section#news .item h3{
+		margin-top: 1rem;
+	}
+}
+@media (min-width: 992px){
+	
+}

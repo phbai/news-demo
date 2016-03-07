@@ -1,0 +1,23 @@
+{% extends 'template.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<section id="content">
+	<div class="small-container">
+		<div class="row article">
+			{{ news.content|safe }}
+		</div>
+	</div>
+</section>
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript">
+	$(function(){
+		var bookmark = $("<span class='title'></span>");
+		$("section#content .article h3").prepend(bookmark);
+		$("img").addClass("img-responsive");
+	});
+</script>
+	
+{% endblock %}
